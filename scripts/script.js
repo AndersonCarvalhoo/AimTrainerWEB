@@ -4,7 +4,7 @@ const containerStart = document.querySelector('.start-battle')
 let count = 0
 
 const iniciar = () => {
-    arena.style.display = 'block'
+    arena.style.display = 'flex'
     containerStart.style.display = 'none'
     const balls = document.querySelectorAll('.ball')
     balls.forEach(item => modifyPosition(item))
@@ -25,7 +25,7 @@ const clickedBall = (event) => {
     count = 0
     points.textContent = count
     arena.style.display = 'none'
-    containerStart.style.display = 'block'
+    containerStart.style.display = 'flex'
 }
 
 const modifyPosition = (item) => {
